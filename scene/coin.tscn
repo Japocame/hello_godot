@@ -104,6 +104,7 @@ script = ExtResource("1_ya73g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=423929725]
 sprite_frames = SubResource("SpriteFrames_uisq4")
+autoplay = "default"
 frame = 11
 frame_progress = 0.80171096
 
