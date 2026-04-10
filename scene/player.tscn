@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://ca33rcwpfefnw"]
+
+[ext_resource type="Texture2D" uid="uid://blp6lyw0pn5nh" path="res://assets/sprites/knight.png" id="1_xo3ru"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjaqi"]
+atlas = ExtResource("1_xo3ru")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fvtld"]
+atlas = ExtResource("1_xo3ru")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ct4mp"]
+atlas = ExtResource("1_xo3ru")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4jxa"]
+atlas = ExtResource("1_xo3ru")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oh5ij"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hjaqi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fvtld")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ct4mp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s4jxa")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1134367279]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=51911940]
+sprite_frames = SubResource("SpriteFrames_oh5ij")
