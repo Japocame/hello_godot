@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://e2c04pd82fo2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vytwi"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vytwi"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_vytwi"]
+
+[node name="Node3D" type="Node3D" unique_id=1181976968]
+
+[node name="cube" type="Node" parent="." unique_id=1175675428]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="cube" unique_id=1512176320]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cube/RigidBody3D" unique_id=303054402]
+shape = SubResource("BoxShape3D_vytwi")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="cube/RigidBody3D" unique_id=900335172]
+mesh = SubResource("BoxMesh_vytwi")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1237474624]
+transform = Transform3D(0.7737297, 0.27210674, -0.5721017, 0, 0.9030581, 0.42951843, 0.6335159, -0.33233115, 0.6987229, -1.8156638, 1.4806337, 2.9766219)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2066519430]
+transform = Transform3D(-0.13945194, 0.40265083, -0.90466875, 0.0613429, 0.9153537, 0.39795068, 0.98832697, -1.5077157e-08, -0.15234762, -2.6610906, 1.0347053, 0)
+
+[node name="Node3D" type="Node3D" parent="." unique_id=46825406]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Node3D" unique_id=1577153127]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/StaticBody3D" unique_id=465099910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4379292, 0)
+shape = SubResource("WorldBoundaryShape3D_vytwi")
