@@ -1,8 +1,8 @@
 extends Area2D
 
-
+@onready var game_manger: Node = %GameManger
 
 func _on_body_entered(body: Node2D) -> void:
-	print(" + 1 coin")
+	game_manger.add_point()
 	queue_free()
 	

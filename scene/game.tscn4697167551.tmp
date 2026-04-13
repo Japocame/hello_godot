@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cpyv0e0p17wvf"]
 
 [ext_resource type="PackedScene" uid="uid://ca33rcwpfefnw" path="res://scene/player.tscn" id="1_5kiuu"]
-[ext_resource type="Script" uid="uid://jyd40841npon" path="res://scripts/game_manger.gd" id="1_qpk70"]
 [ext_resource type="Texture2D" uid="uid://s2vn5gehi3kd" path="res://assets/sprites/world_tileset.png" id="2_dbls1"]
 [ext_resource type="PackedScene" uid="uid://dfenxcl4amyr1" path="res://scene/platform.tscn" id="3_33cqm"]
 [ext_resource type="PackedScene" uid="uid://5fwqjswrixa6" path="res://scene/coin.tscn" id="4_xwcet"]
@@ -270,10 +269,6 @@ _data = {
 
 [node name="Game" type="Node2D" unique_id=1038137381]
 
-[node name="GameManger" type="Node" parent="." unique_id=8548005]
-unique_name_in_owner = true
-script = ExtResource("1_qpk70")
-
 [node name="Player" parent="." unique_id=1134367279 instance=ExtResource("1_5kiuu")]
 z_index = 3
 position = Vector2(0, 0)
@@ -341,9 +336,3 @@ position = Vector2(136, -12)
 
 [node name="Slime3" parent="." unique_id=1063393275 instance=ExtResource("6_xlg7c")]
 position = Vector2(-24, -108)
-
-[node name="Label" type="Label" parent="." unique_id=1632061551]
-offset_right = 40.0
-offset_bottom = 23.0
-
-[node name="Node" type="Node" parent="Label" unique_id=323667449]
